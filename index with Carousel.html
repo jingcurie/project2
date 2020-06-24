@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    setup = function() {
+        $(".phone-icon").click(function() { $("nav").slideToggle("slow"); })
+    }
+    $(document).ready(setup);
+    </script>
+
+    <script>
+        to_p1 = function(){
+            $("#car-item2").hide()
+            $("#car-item3").hide()
+            $("#car-item1").show()
+            $('#car-item1').css({'opacity':'0'})
+            $('#car-item1').animate({'opacity':'1'}, 500)
+
+            $("#indicator-next").off()
+            $("#indicator-next").click(to_p2)
+            $('#indicator-pre').off()
+            $('#indicator-pre').click(to_p3)
+        }
+
+        to_p2 = function(){
+            $("#car-item3").hide()
+            $("#car-item1").hide()
+            $("#car-item2").show()
+            $('#car-item2').css({'opacity':'0'})
+            $('#car-item2').animate({'opacity':'1'}, 500)
+
+            $("#indicator-next").off()
+            $("#indicator-next").click(to_p3)
+            $('#indicator-pre').off()
+            $('#indicator-pre').click(to_p2)
+        }
+
+        to_p3 = function(){
+            $("#car-item1").hide()
+            $("#car-item2").hide()
+            $("#car-item3").show()
+            $('#car-item3').css({'opacity':'0'})
+            $('#car-item3').animate({'opacity':'1'}, 500)
+
+            $("#indicator-next").off()
+            $("#indicator-next").click(to_p1)
+            $('#indicator-pre').off()
+            $('#indicator-pre').click(to_p2)
+        }
+
+        setup = function(){
+            $("#indicator-next").click(to_p2)
+            $("#car-item1").show()
+        }
+        $(document).ready(setup)
+        
+    </script>
+</head>
+
+<body>
+    <div class="page-header">
+        <div class="phone-icon"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></div>
+        <nav class="page-header-left">
+            <a href="">Women</a>
+            <a href="">Men</a>
+            <a href="">Denim</a>
+            <a href="">Tread</a>
+            <a href="">About</a>
+        </nav>
+        <div class="logo page-header-middle">
+            <h1>EVERLANE</h1>
+        </div>
+        <div class="page-header-right">
+            <div>
+                <a href=" "><i class="fa fa-search"></i>Search</a>
+            </div>
+            <div>
+                <a href="#">Log In</a>
+            </div>
+            <div>
+                <a href="#"><i class="fa fa-cart-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="advertising-cta" id="car-item1">
+            <h2>Meet The <br>$48 Easy Short</h2>
+            <p>page1</p>
+            <a href="" class="call-action-button">SHOP NOW</a>
+        </div>
+        <div class="advertising-cta" id="car-item2">
+            <h2>Meet The <br>$48 Easy Short</h2>
+            <p>page2</p>
+            <a href="" class="call-action-button">SHOP NOW</a>
+        </div>
+        <div class="advertising-cta" id="car-item3">
+            <h2>Meet The <br>$48 Easy Short</h2>
+            <p>page3</p>
+            <a href="" class="call-action-button">SHOP NOW</a>
+        </div>
+        <div class="indicator">
+                <a href="#car-item1" id="indicator-next"><i class="fa fa-angle-right"></i></a>
+                <a href="#car-item2" id="indicator-pre"><i class="fa fa-angle-left"></i></a>
+        </div>
+    </div>
+    <div class="promotion">
+        <div class="promotion-item1">
+            <div>
+                <img src="images/promotion-item1.jpeg" alt="promotion item1">
+            </div>
+            <h3><a href="">Every Action Counts</a></h3>
+            <p><a href="">There are a lot of ways to show up for this historic moment.
+                    Our team has created a resource doc here.</a></p>
+        </div>
+        <div class="promotion-item2">
+            <div>
+                <img src="images/promotion-item1.jpeg" alt="promotion item1">
+            </div>
+            <h3><a href="">Every Action Counts</a></h3>
+            <p><a href="">There are a lot of ways to show up for this historic moment.
+                    Our team has created a resource doc here.</a></p>
+        </div>
+        <div class="promotion-item3">
+            <div>
+                <img src="images/promotion-item1.jpeg" alt="promotion item1">
+            </div>
+            <h3><a href="">Every Action Counts</a></h3>
+            <p><a href="">There are a lot of ways to show up for this historic moment.
+                    Our team has created a resource doc here.</a></p>
+        </div>
+    </div>
+    <div>
+        mmmmmmmmm
+    </div>
+</body>
+
+</html>

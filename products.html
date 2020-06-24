@@ -5,9 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
+
+<script>
+  function changePics(i){
+     if (i == 1){
+        document.getElementById("single-product-image").src="images/single-product1-2.jpeg"
+     }else if (i == 2){
+        document.getElementById("single-product-image").src="images/single-product1-3.jpeg"
+     }else if (i == 3){
+        document.getElementById("single-product-image").src="images/single-product1-4.jpeg"
+     }else if (i == 0){
+        document.getElementById("single-product-image").src="images/single-product1-1.jpeg"
+     }
+     
+  }
+
+</script>
 </head>
 <body>
- <div class="page-header">
+ <!-- page header begin-->
+ <header class="page-header">
   <nav class="page-header-left">
    <a href="">Women</a >
    <a href="">Men</a >
@@ -30,44 +47,163 @@
     <a href="#"><i class="fa fa-cart-plus"></i></a >
    </div>
   </div>
- </div>
+ </header>
+ <!-- page header end-->
 
- <div class="advertising-cta">
- 	<h2>Meet The <br>$48 Easy Short</h2>
- 	<p>Pull-on comfort.Effortless look</p>
- 	<a href="" class="call-action-button">SHOP NOW</a>
- </div>
+<main class="products-container">
+  <div class="products-menu">
+    <h3>All Women's</h3>
+    <select>
+      <option value="volvo"><a href="">New</a></option>
+      <option value="saab"><a href="">Dresses + Rompers</a></option>
+      <option value="mercedes"><a href="">Tops</a></option>
+      <option value="audi"><a href="">Jackets</a></option>
+    </select>
+    <ul>
+      <li><a href=""><a href="">New</a></li>
+      <li><a href=""><a href="">Dresses + Rompers</a></li>
+      <li><a href=""><a href="">Tops</a></li>
+      <li><a href=""><a href="">Jackets</a></li>
+      <li>Denim</li>
+    </ul>
+  </div>
+  <div class="products-list">
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
 
- <div class="promotion">
- 	<div class="promotion-item1">
- 		<div>
- 			<img src="images/promotion-item1.jpeg" alt="promotion item1">
- 		</div>
- 		<h3><a href="">Every Action Counts</a></h3>
- 		<p><a href="">There are a lot of ways to show up for this historic moment. 
- 		Our team has created a resource doc here.</a></p>
- 	</div>
- 	<div class="promotion-item2">
- 		<div>
- 			<img src="images/promotion-item1.jpeg" alt="promotion item1">
- 		</div>
- 		<h3><a href="">Every Action Counts</a></h3>
- 		<p><a href="">There are a lot of ways to show up for this historic moment. 
- 		Our team has created a resource doc here.</a></p>
- 	</div>
- 	<div class="promotion-item3">
-		<div>
- 			<img src="images/promotion-item1.jpeg" alt="promotion item1">
- 		</div>
- 		<h3><a href="">Every Action Counts</a></h3>
- 		<p><a href="">There are a lot of ways to show up for this historic moment. 
- 		Our team has created a resource doc here.</a></p>
- 	</div>
- </div>
+   <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
 
-<div>
-	mmmmmmmmm
-</div>
- 
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+
+    <div class="products-single">
+      <div class="products-single-image">
+        <a href="single-product.html">
+        <img src="images/single-product1-1.jpeg" alt="product 1" id="single-product-image" onmouseover="changePics(0)"/>
+        </a>
+      </div>
+      <div class="products-single-desc"><a href="">iets frans… Embroidered Jogger Pant</a></div>
+      <div class="products-single-price"><span>CA$64.00</span></div>
+      <div class="products-single-colors">
+        <a href="javascript:void(0)" onmouseover="changePics(1)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(2)"></a>
+        <a href="javascript:void(0)" onmouseover="changePics(3)"></a>
+      </div>
+      <div class="products-single-colors-avaliable">New Colors Available</div>
+    </div>
+
+   
+  </div>
+</main>
+
+<!-- page footer begin-->
+ <footer class="page-footer">
+   ??????????
+ </footer>
+ <!-- page footer end-->
+
 </body>
 </html>
